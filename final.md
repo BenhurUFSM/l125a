@@ -2,8 +2,8 @@
 ## Entrega final
 
 Coloque a versão final dos trabalhos (quais?) em um diretório chamado `l1-final-`*fulano*
- (*fulano* é uma string que identifica o aluno).
-Coloque também nesse diretório um arquivo `l1-av-`*fulano*.pdf contendo um texto de auto-avaliação.
+ (*fulano* é uma string que identifica o aluno, por exemplo `l1-final-benhur`).
+Coloque também nesse diretório um arquivo `l1-av-`*fulano*.pdf (por exemplo, `l1-av-benhur.pdf`) contendo um texto de auto-avaliação.
 Comprima esse diretório, anexe a um mail e envie para o endereço da disciplina.
 
 Além desse e-mail, tem que ter uma conversa com o professor. O horário da conversa vai ser definido por ordem de chegada dos e-mails. Caso tenha alguma restrição/preferência de dia/horário, por favor mencione no e-mail.
