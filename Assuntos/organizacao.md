@@ -1,5 +1,8 @@
 ## Introdução - organização de um computador
 
+Breve...
+
+<!--
 O objetivo da disciplina é conseguir programar um computador. Para isso devemos produzir um conjunto de comandos que o computador deve realizar. Para entendermos melhor que comandos podemos esperar que um computador consiga realizar, vamos antes ver, de forma bem resumida, como um computador é constituído.
 
 A arquitetura de um computador atual é descendente direto dos primeiros computadores, o que ficou conhecido como arquitetura de von Neumann. Ela é composta de 3 componentes principais: as unidades de entrada e saída, a memória e a unidade central de processamento. Essas unidades são interligadas, de forma que dados possam ser passados entre elas.
@@ -144,3 +147,4 @@ O programa deve ser escrito em linguagem de montagem e traduzido para linguagem 
 Esse assunto pode ser visto no capítulo 4 do [livro de algoritmos da UFPR](https://www.inf.ufpr.br/marcos/livro_alg1/livro_alg1.pdf).
 Recomendo ler também os capítulos anteriores...
 
+-->
