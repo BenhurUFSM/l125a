@@ -41,6 +41,7 @@ Os assuntos vistos em aula serão listados aqui.
 |    N |   data | assunto
 | ---: | -----: | :--------
 |    1 | 11mar  | [apresentação, introdução, o que é um computador](Assuntos/organizacao.md)
+|    2 | 13mar  | [simulação de um computador](https://docs.google.com/document/d/1AEC4Ywk6ZQ9sym5MkdkcPYaM-EhM7aYU2su6F9KsYhs/edit?usp=sharing)
 
 
 ## Exercícios, trabalhos
