@@ -11,25 +11,30 @@ Essas unidades são interligadas, de forma que dados possam ser passados entre e
 Um "dado" é um número, e é a única coisa que um computador é capaz de processar.
 Para que algo possa ser processado por um computador, devemos encontrar uma forma de representar esse algo como um número ou um conjunto de números.
 
-As unidades de **entrada e saída** convertem informações externas ao computador em dados internos ou vice-versa. Uma unidade de entrada é responsável por converter alguma informação que se deseja que o computador manipule, da forma de representação que ela tem externamente ao computador para uma forma de representação numérica interna (por exemplo, um teclado ou um microfone). Uma unidade de saída converte algum dado interno ao computador em uma representação externa (por exemplo, uma tela ou um fone de ouvido). Algumas unidades, como dispositivos de armazenamento de dados podem ser de entrada e de saída. Uma operação de uma unidade de E/S consiste na realização de uma dessas conversões.
+As unidades de **entrada e saída** convertem informações externas ao computador em dados internos ou vice-versa.
+Uma unidade de entrada é responsável por converter alguma informação que se deseja que o computador manipule, da forma de representação que ela tem externamente ao computador para uma forma de representação numérica interna (por exemplo, um teclado ou um microfone).
+Uma unidade de saída converte algum dado interno ao computador em uma representação externa (por exemplo, uma tela ou um fone de ouvido).
+Algumas unidades, como dispositivos de armazenamento de dados, podem ser de entrada e de saída. Uma operação de uma unidade de E/S consiste na realização de uma dessas conversões.
 
 A **memória** do computador é capaz de reter uma grande quantidade de dados. Cada dado é um número, que pode ser alterado ou acessado.
 Uma operação da memória corresponde ou a alterar um desses dados (operação de escrita) ou a encontrar um desses dados (operação de leitura).
 Cada um dos dados é identificado por um número que representa a posição desse dado na memória, chamado de *endereço*.
 Em uma memória com capacidade para N valores existem N endereços diferentes, geralmente com valores entre 0 e N-1.
 
-A **unidade central de processamento**, também chamada de processador ou CPU, da sigla em inglês, é quem controla o funcionamento da máquina. Ela tem dois componentes principais: *unidade lógica e aritmética*, que consegue realizar operações sobre números (soma, multiplicação, comparação, etc), e a *unidade de controle*, que decide quando cada uma das demais unidades deve operar, que operação deve realizar, e que valores devem ser usados nessa operação.
+A **unidade central de processamento**, também chamada de processador ou CPU, da sigla em inglês, é quem controla o funcionamento da máquina.
+Ela tem dois componentes principais: *unidade lógica e aritmética*, que consegue realizar operações sobre números (soma, multiplicação, comparação, etc), e a *unidade de controle*, que decide quando cada uma das demais unidades deve operar, que operação deve realizar, e que valores devem ser usados nessa operação.
 
-O funcionamento do computador é realizado através da execução de **instruções**. Uma instrução é uma ação básica que é realizada pela execução de uma sequência de operações pelas unidades do computador, controladas pela unidade de controle.
+O funcionamento do computador é realizado através da execução de **instruções**.
+Uma instrução é uma ação básica que é realizada pela execução de uma sequência de operações pelas unidades do computador, controladas pela unidade de controle.
 Os principais tipos de instrução envolvem a transferência de dados entre as unidades.
-Por exemplo, uma instrução pode movimentar um dado que está na memória para um dispositivo de saída, outra pode transferir um dado de um dispositivo de entrada para uma posição da memória; outra pode realizar duas operações de leitura à memória para pegar dois números, enviá-los à ULA para somá-los e o resultado ser escrito em uma terceira posição de memória, e assim por diante.
+Por exemplo, uma instrução pode movimentar um dado que está na memória para um dispositivo de saída; outra pode transferir um dado de um dispositivo de entrada para uma posição da memória; outra pode realizar duas operações de leitura à memória para pegar dois números, enviá-los à ULA para somá-los e o resultado ser escrito em uma terceira posição de memória, e assim por diante.
 
 A unidade de controle tem pré-programadas as sequências de operações que devem ser realizadas pelas unidades para a execução de cada uma das instruções que um computador pode executar.
 O conjunto dessas instruções, que representa tudo que um computador é capaz de realizar, é definido pelo fabricante do processador.
 Cada uma dessas instruções recebe um código, um número que a identifica.
-A unidade de controle executa a sequência de operações que correspondem a uma instrução assim que recebe um desses códigos. 
+A unidade de controle executa a sequência de operações que correspondem a uma instrução assim que recebe um desses códigos para execução.
 
-Os códigos de instruções para serem executados pela unidade de controle são colocados na memória do computador, assim como os dados que essas instruções manipularão.
+Os códigos de instruções para serem executadas pela unidade de controle são colocados na memória do computador, assim como os dados que essas instruções manipularão.
 Para identificar a instrução a executar, a unidade de controle contém um número (chamado "contador de programa" ou PC), que corresponde ao endereço da memória onde está o código da instrução a ser executada.
 
 A unidade de controle realiza um ciclo de execução durante todo o tempo em que está em funcionamento:
@@ -46,7 +51,8 @@ Cada instrução realiza pouca coisa; o poder do computador está em realizar es
 Algumas instruções necessitam mais informação para sua execução, por exemplo, em que endereços de memória estão os valores a somar, ou onde colocar o resultado de uma operação.
 Essas informações fazem parte da instrução e são colocadas em memória, logo após o código da instrução.
 
-Por exemplo, suponha que o nosso processador saiba realizar as instruções abaixo. Nessa tabela, a notação `[E]` representa o dado que está no endereço `E` da memória; `[[E]]` é o dado que está no endereço correspondente ao dado que está no endereço `E` da memória; `PC` é o valor do contador de programa; `PC+1` é um a mais que o valor do contador de programa.
+Por exemplo, suponha que o nosso processador saiba realizar as instruções contidas na tabela abaixo.
+Nessa tabela, a notação `[E]` representa o dado que está no endereço `E` da memória; `[[E]]` é o dado que está no endereço correspondente ao dado que está no endereço `E` da memória; `PC` é o valor do contador de programa; `PC+1` é um a mais que o valor do contador de programa.
 
 código | o que faz                           | ações a executar
 -----: | :---------------------------------- | :-----------------------------------------------
@@ -74,7 +80,7 @@ O funcionamento da unidade de controle nesse caso seria o seguinte:
   - inicialmente, a UC deve conseguir a identificação do dispositivo, que está em PC+1 -- PC vale 0, PC+1 é 1, e a UC pede para a memória o valor contido nesse endereço (obtém 2);
   - então, faz uma operação de leitura de entrada e saída, na unidade 2;
   - a unidade correspondente (o teclado), vai transferir o dado lido do teclado para a UC;
-  - a UC deve então obter o valor em PC+2 -- PC vale 0, PC+2 vale 2, a memória entrega o conteúdo no endereço 2, que é 20.
+  - a UC deve então obter o valor em PC+2 -- PC vale 0, PC+2 vale 2, a memória entrega o conteúdo no endereço 2, que é 20;
   - a unidade de controle então faz uma operação de escrita na memória, escrevendo o valor lido do teclado na posição 20 da memória;
   - UC atualiza o PC, somando 3: PC vale 0 e é atualizado para 3.
 
@@ -83,7 +89,7 @@ Fim da execução da primeira instrução.
 A UC volta a repetir o ciclo, iniciando com a busca no endereço que está no PC.
 O código obtido do endereço 3 é novamente 2, a UC vai repetir o que fez antes, com a diferença de que desta vez o valor lido será armazenado no endereço 21 e não 20 como antes. O PC é atualizado para 6.
 
-No endereço 6, a UC encontra a instrução 3, e realiza a soma dos valores que estão nos endereços 20 e 21, e armazena o resultado no endereço 22. E assim por diante, até executar a instrução com código 9, contida no endereço 17, que faz o computador parar.
+No endereço 6, a UC encontra a instrução 3, que corresponde à soma. Ela então realiza a soma dos valores que estão nos endereços 20 e 21, e armazena o resultado no endereço 22. E assim por diante, até executar a instrução com código 9, contida no endereço 17, que faz o computador parar.
 
 Fica mais fácil entender essa sequência de números quando eles são separados por instrução:
 
@@ -113,7 +119,10 @@ Nós humanos temos mais facilidade para lidar com nomes que com números. A sequ
 17        | PARA
 18        | 2
 
-O endereço onde fica cada instrução em geral não é uma informação importante para se entender o programa. A posição onde cada dado é colocado também não, é muito mais fácil referir-se a esses dados por um nome. O endereço onde fica o valor 2 também não é muito importante para se entender as instruções. Fazendo essas substituições, pode-se escrever essa mesma sequência de uma forma mais fácil de ser lida (para um humano):
+O endereço onde fica cada instrução em geral não é uma informação importante para se entender o programa.
+A posição onde cada dado é colocado também não, é muito mais fácil referir-se a esses dados por um nome.
+O endereço onde fica o valor 2 também não é muito importante para se entender as instruções.
+Fazendo essas substituições, pode-se escrever essa mesma sequência de uma forma mais fácil de ser lida (para um humano):
 ```
     LE TECL, N1
     LE TECL, N2
@@ -126,10 +135,16 @@ O endereço onde fica cada instrução em geral não é uma informação importa
 Essa última versão é sem dúvida mais fácil de ser escrita e entendida, mais difícil de se cometer erros ao escrevê-la, e não é muito complicado de se fazer a tradução entre esse texto e a sequência de números que representa as mesmas instruções.
 Não é muito difícil de se fazer um programa para fazer essa tradução: lê o texto de uma unidade de entrada e coloca a sequência de números equivalentes em algum lugar da memória para depois ser executado, ou escreve essa sequência em um dispositivo de saída, de onde poderá ser lido mais tarde (e executado).
 
-Uma sequência de instruções para um computador executar, como essa, é chamada de **programa**. Quando esse programa é escrito com números, pronto para ser executado pela máquina, diz-se que ele está escrito em **linguagem de máquina**. Quando ele está escrito com mnemônicos e nomes para as posições de memória, diz-se que ele está escrito em **linguagem de montagem** (*assembly language* em inglês). 
-Para poder ser executado, um programa escrito em linguagem de montagem deve ser traduzido para o programa equivalente em linguagem de máquina. Esse processo é realizado por um programa, chamado **montador** (*assembler* em inglês).
+Uma sequência de instruções para um computador executar, como essa, é chamada de **programa**.
+Quando esse programa é escrito com números, pronto para ser executado pela máquina, diz-se que ele está escrito em **linguagem de máquina**.
+Quando ele está escrito com mnemônicos e nomes para as posições de memória, diz-se que ele está escrito em **linguagem de montagem** (*assembly language* em inglês). 
+Para poder ser executado, um programa escrito em linguagem de montagem deve ser traduzido para o programa equivalente em linguagem de máquina.
+Esse processo é realizado por um programa, chamado **montador** (*assembler* em inglês).
+Esse programa, além de realizar a tradução dos mnemônicos, e de valores pré-conhecidos como `TECL`, também tem a tarefa de encontrar posições de memória disponíveis para realizar a tradução de nomes como `N1` e `S`, que são nomes inventados pelo programador.
 
-Apesar de ser bem mais fácil de se programar em linguagem de montagem do que em linguagem de máquina, é um processo bastante tedioso. Outras linguagens foram inventadas, permitindo se expressar os comandos que se quer que um computador execute de uma maneira menos detalhada. Por vezes se chama essas linguagens de 'linguagens de alto nível' ou mais comumente 'linguagens de programação'.
+Apesar de ser bem mais fácil de se programar em linguagem de montagem do que em linguagem de máquina, é um processo bastante tedioso.
+Outras linguagens foram inventadas, permitindo se expressar os comandos que se quer que um computador execute de uma maneira menos detalhada.
+Por vezes se chama essas linguagens de 'linguagens de alto nível' ou mais comumente 'linguagens de programação'.
 O mesmo programa acima poderia ser escrito assim, por exemplo:
 ```
   le(n1, n2)
