@@ -1,30 +1,37 @@
 ## Introdução - organização de um computador
 
-Breve...
-
-<!--
 O objetivo da disciplina é conseguir programar um computador. Para isso devemos produzir um conjunto de comandos que o computador deve realizar. Para entendermos melhor que comandos podemos esperar que um computador consiga realizar, vamos antes ver, de forma bem resumida, como um computador é constituído.
 
-A arquitetura de um computador atual é descendente direto dos primeiros computadores, o que ficou conhecido como arquitetura de von Neumann. Ela é composta de 3 componentes principais: as unidades de entrada e saída, a memória e a unidade central de processamento. Essas unidades são interligadas, de forma que dados possam ser passados entre elas.
-Um "dado" é um número, e é a unica coisa que um computador é capaz de processar.
+A arquitetura de um computador atual é descendente direta dos primeiros computadores, o que ficou conhecido como arquitetura de von Neumann. Ela é composta de 3 componentes principais:
+- unidades de entrada e saída,
+- memória, e
+- unidade central de processamento.
+
+Essas unidades são interligadas, de forma que dados possam ser passados entre elas.
+Um "dado" é um número, e é a única coisa que um computador é capaz de processar.
 Para que algo possa ser processado por um computador, devemos encontrar uma forma de representar esse algo como um número ou um conjunto de números.
 
-As unidades de **entrada e saída** são responsáveis por converter alguma informação que se deseja que o computador manipule, da forma de representação que ela tem externamente ao computador para uma forma de representação interna de números (unidade de entrada, como um teclado ou um microfone), ou vice-versa, converter algum dado interno ao computador em uma representação externa (unidade de saída, como a tela ou um fone de ouvido).
+As unidades de **entrada e saída** convertem informações externas ao computador em dados internos ou vice-versa. Uma unidade de entrada é responsável por converter alguma informação que se deseja que o computador manipule, da forma de representação que ela tem externamente ao computador para uma forma de representação numérica interna (por exemplo, um teclado ou um microfone). Uma unidade de saída converte algum dado interno ao computador em uma representação externa (por exemplo, uma tela ou um fone de ouvido). Algumas unidades, como dispositivos de armazenamento de dados podem ser de entrada e de saída. Uma operação de uma unidade de E/S consiste na realização de uma dessas conversões.
 
-A **memória** do computador é capaz de reter uma grande quantidade de dados. Cada dado é um número, que pode ser alterado ou acessado. Uma operação da memória corresponde ou a alterar um desses dados (operação de escrita) ou a encontrar um desses dados (operação de leitura). Cada um dos dados é identificado por um número que representa a posição desse dado na memória, chamado de *endereço*.
-Em uma memória com capacidade para N valores existem N endereços diferentes, geralmente 0 a N-1.
+A **memória** do computador é capaz de reter uma grande quantidade de dados. Cada dado é um número, que pode ser alterado ou acessado.
+Uma operação da memória corresponde ou a alterar um desses dados (operação de escrita) ou a encontrar um desses dados (operação de leitura).
+Cada um dos dados é identificado por um número que representa a posição desse dado na memória, chamado de *endereço*.
+Em uma memória com capacidade para N valores existem N endereços diferentes, geralmente com valores entre 0 e N-1.
 
 A **unidade central de processamento**, também chamada de processador ou CPU, da sigla em inglês, é quem controla o funcionamento da máquina. Ela tem dois componentes principais: *unidade lógica e aritmética*, que consegue realizar operações sobre números (soma, multiplicação, comparação, etc), e a *unidade de controle*, que decide quando cada uma das demais unidades deve operar, que operação deve realizar, e que valores devem ser usados nessa operação.
 
 O funcionamento do computador é realizado através da execução de **instruções**. Uma instrução é uma ação básica que é realizada pela execução de uma sequência de operações pelas unidades do computador, controladas pela unidade de controle.
 Os principais tipos de instrução envolvem a transferência de dados entre as unidades.
-Por exemplo, uma instrução pode movimentar um dado que está na memória para um dispositivo de saída, outra pode transferir um dado de um dispositivo de entrada para uma posição da memória; outra pode realizar duas operações de leitura à memória para pegar dois números, enviá-los à ULA para somá-los e o resultado ser gravado em uma terceira posição de memória, e assim por diante.
+Por exemplo, uma instrução pode movimentar um dado que está na memória para um dispositivo de saída, outra pode transferir um dado de um dispositivo de entrada para uma posição da memória; outra pode realizar duas operações de leitura à memória para pegar dois números, enviá-los à ULA para somá-los e o resultado ser escrito em uma terceira posição de memória, e assim por diante.
+
 A unidade de controle tem pré-programadas as sequências de operações que devem ser realizadas pelas unidades para a execução de cada uma das instruções que um computador pode executar.
 O conjunto dessas instruções, que representa tudo que um computador é capaz de realizar, é definido pelo fabricante do processador.
 Cada uma dessas instruções recebe um código, um número que a identifica.
 A unidade de controle executa a sequência de operações que correspondem a uma instrução assim que recebe um desses códigos. 
 
-Os códigos de instruções para serem executados pela unidade de controle são colocados na memória do computador, assim como os dados que essas instruções manipularão. A unidade de controle contém um número (chamado "contador de programa" ou PC), que corresponde ao endereço da memória onde está o código da instrução a ser executada.
+Os códigos de instruções para serem executados pela unidade de controle são colocados na memória do computador, assim como os dados que essas instruções manipularão.
+Para identificar a instrução a executar, a unidade de controle contém um número (chamado "contador de programa" ou PC), que corresponde ao endereço da memória onde está o código da instrução a ser executada.
+
 A unidade de controle realiza um ciclo de execução durante todo o tempo em que está em funcionamento:
 - primeiro ela faz a **busca**, que é uma operação de leitura na memória, no endereço contido no PC, para obter o código da instrução a executar;
 - ela então faz a **decodificação**, que corresponde a obter (em seus circuitos internos) a sequência de passos necessários para a execução dessa instrução;
@@ -147,4 +154,3 @@ O programa deve ser escrito em linguagem de montagem e traduzido para linguagem 
 Esse assunto pode ser visto no capítulo 4 do [livro de algoritmos da UFPR](https://www.inf.ufpr.br/marcos/livro_alg1/livro_alg1.pdf).
 Recomendo ler também os capítulos anteriores...
 
--->
