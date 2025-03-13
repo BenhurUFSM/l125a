@@ -50,15 +50,15 @@ A descrição dos exercícios e trabalhos a entregar será colocada abaixo.
 
 |     N |     prazo | descrição
 | ----: | --------: | :-----------
-|    e1 | 17mar     | breve
+|    e1 | 17mar, 15h | [média de 3](Trabalhos/e1.md)
 |    t1 | asd       | menos breve
 | ...   | ...       | ...
 | final | 30jun     | [entrega final](final.md)
 
 ## Notas, etc
 
-Informações individuais sobre os alunos (identificação, datas para a entrevista final, notas, etc) estarão na [tabela](https://docs.google.com/spreadsheets/d/1ypKaq3P_jSKWu54xONsxRbuhFwE5L_AGF1RG1tDw5FA/edit?usp=sharing).
-A tabela vai sendo preenchida durante o semestre.
+Informações individuais sobre os alunos (identificação, datas para a entrevista final, notas, etc) estarão na [planilha](https://docs.google.com/spreadsheets/d/1ypKaq3P_jSKWu54xONsxRbuhFwE5L_AGF1RG1tDw5FA/edit?usp=sharing).
+A planilha vai sendo preenchida durante o semestre.
 
 As notas aparecerão após o processamento das entrevistas.
 Quem não tiver nota 7, o exame é provavelmente dia 15jul.
