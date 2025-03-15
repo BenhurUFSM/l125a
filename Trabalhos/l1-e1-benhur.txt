@@ -1,0 +1,20 @@
+Aluno: Benhur Stein
+Exercício 1: programa para calcular a média de 2 números
+
+Versão em linguagem de montagem:
+
+    LE TECL, N1
+    LE TECL, N2
+    SOMA N1, N2, S
+    DIV S, #2, R
+    ESCR R, VIDEO
+    PARA
+
+Versão em linguagem de máquina:
+
+endereço |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9
+valor    |  2  |  2  | 20  |  2  |  2  | 21  |  3  | 20  | 21  | 22
+
+endereço | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18
+valor    |  5  | 22  | 18  | 23  |  1  | 23  |  3  |  9  |  2
+
