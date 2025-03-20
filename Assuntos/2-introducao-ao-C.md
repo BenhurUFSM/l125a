@@ -103,7 +103,13 @@ Para não precisar saber esses códigos, é possível também colocar o caracter
   putchar('A');
 ```
 
-O programa completo para imprimir um `A` é então:
+<a id="mpp"></a>
+### Meu primeiro programa em C
+
+Juntando isso tudo, podemos fazer nosso primeiro programa em C.
+O programa irá imprimir o caractere `A` na tela.
+Não é muita coisa, mas serve para começar...
+O texto completo desse programa é:
 ```c
   #include <stdio.h>
 
@@ -119,12 +125,14 @@ No ambiente linux, uma compilador para a linguagem C bem conhecido se chama `gcc
   gcc p1.c -o p1
 ```
 
-Para executar o programa, damos o seguinte comando:
+Para executar o programa, necessitamos que o conteúdo desse arquivo seja colocado na memória e a CPU instruída a executar suas instruções. Quem faz isso é o sistema operacional. No caso do linux, isso pode ser feito com o seguinte comando:
 ```sh
   ./p1
 ```
 
-Irá aparecer o caractere `A` na tela do terminal.
+O programa será executado, e irá aparecer o caractere `A` na tela do terminal.
+
+...
 
 ### Exercícios
 
