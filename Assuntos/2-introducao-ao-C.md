@@ -137,4 +137,4 @@ O programa será executado, e irá aparecer o caractere `A` na tela do terminal.
 ### Exercícios
 
 1. Crie um arquivo com o programa acima, compile-o e execute-o.
-2. Altere o programa para escrever seu nome. A função putchar só escreve um caractere; tem que chamá-la várias vezes.
+2. Altere o programa para escrever seu nome. A função `putchar` só escreve um caractere; tem que chamá-la várias vezes. A função `putchar` não é boa para caracteres acentuados.
