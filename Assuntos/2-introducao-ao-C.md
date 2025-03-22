@@ -380,11 +380,13 @@ void put3dig(int num)
 1. Altere o programa da média para imprimir números com 6 dígitos. Tem que ter uma função para cada número de dígitos.
 2. Faça uma função para imprimir um número em binário com 4 dígitos. Use a mesma técnica.
 3. Faça um programa para testar suas funções, imprimindo os números de 0 a 15, em decimal (2 casas) e em binário com 4 casas, com um número por linha. O programa deve imprimir assim:
-```
-00 0000
-01 0001
-02 0010
-...
-15 1111
-```
-Dica: faça uma função que recebe um número como argumento e imprime esse número em decimal, um espaço em branco, o número em binário e pula linha.
+   ```
+   00 0000
+   01 0001
+   02 0010
+   ...
+   15 1111
+   ```
+   Dica: faça uma função que recebe um número como argumento e imprime esse número em decimal, um espaço em branco, o número em binário e pula linha.
+
+   A única função externa ao programa que se pode usar é `putchar`.
