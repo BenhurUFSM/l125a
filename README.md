@@ -44,6 +44,7 @@ Os assuntos vistos em aula serão listados aqui.
 |    2 | 13mar  | [simulação de um computador](https://docs.google.com/document/d/1AEC4Ywk6ZQ9sym5MkdkcPYaM-EhM7aYU2su6F9KsYhs/edit?usp=sharing)
 |    3 | 18mar  | [introdução ao C](Assuntos/2-introducao-ao-C.md)
 |    4 | 20mar  | [primeiro programa C](Assuntos/2-introducao-ao-C.md#mpp)
+|    5 | 25mar  | [melhor controle sobre os números](Assuntos/2-introducao-ao-C.md#melhor)
 
 
 ## Exercícios, trabalhos

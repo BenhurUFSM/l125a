@@ -390,3 +390,25 @@ void put3dig(int num)
    Dica: faça uma função que recebe um número como argumento e imprime esse número em decimal, um espaço em branco, o número em binário e pula linha.
 
    A única função externa ao programa que se pode usar é `putchar`.
+
+
+<a id=melhor/>
+### Melhor controle sobre a impressão de números
+
+Com as funções da aula anterior, conseguimos imprimir números, mas ainda tem algumas restrições inconvenientes:
+- os números têm uma quantidade fixa de dígitos, com zeros iniciais que podem dificultar a leitura;
+- temos que decidir previamente a quantidade de dígitos, e chamar a função correspondente;
+- não funciona com números negativos.
+
+Vamos atacar esses problemas.
+Todas nossas funções têm o mesmo aspecto, que pode ser generalizado em algo como:
+```c
+void put'N'dig(int x)
+{
+  put'N-1'dig(x / 10);
+  putchar('0' + x % 10);
+}
+```
+exceto para a put1dig, que não tem a primeira linha.
+
+*...continua...*
