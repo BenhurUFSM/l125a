@@ -397,18 +397,139 @@ void put3dig(int num)
 
 Com as funções da aula anterior, conseguimos imprimir números, mas ainda tem algumas restrições inconvenientes:
 - os números têm uma quantidade fixa de dígitos, com zeros iniciais que podem dificultar a leitura;
-- temos que decidir previamente a quantidade de dígitos, e chamar a função correspondente;
+- temos que decidir previamente a quantidade de dígitos, e chamar a função correspondente, e talvez essa função não exista (se temos só até a função que imprimes números de 6 dígitos, não temos como imprimir números maiores);
 - não funciona com números negativos.
 
 Vamos atacar esses problemas.
 Todas nossas funções têm o mesmo aspecto, que pode ser generalizado em algo como:
 ```c
-void put_N_dig(int x)
+void put6dig(int x)
 {
-  put_N-1_dig(x / 10);
+  put5dig(x / 10);
   putchar('0' + x % 10);
 }
 ```
-exceto para a put1dig, que não tem a primeira linha.
+ou seja, cada função chama a anterior para imprimir o número sem o último dígito, e depois imprime seu último dígito.
+Na última função, put1dig, omitimos a chamada para imprimir os demais dígitos, porque (em princípio) ela só tem um dígito a imprimir:
+```c
+void put1dig(int x)
+{
+  putchar('0' + x % 10);
+}
+```
+Como cada função tem uma chamada a putchar, cada função vai imprimir um dígito. Quando se chama put3dig, ela vai chamar put2dig, que vai chamar put1dig. Cada uma delas vai imprimir um dígito, então teremos 3 dígitos impressos, independente do número recebido como argumento.
+Para não imprimir os zeros no início, teríamos que suprimir a impressão, ou não chamar a função que imprime os dígitos que não são necessários.
+Se cada função evitar de chamar a função que imprime x/10 de não houver nada a imprimir a não ser um dígito, evitaríamos a impressão dos dígitos 0.
+Para isso, necessitamos uma forma de condicionar a chamada a essa função somente aos casos em que ela teria dígitos não 0 a imprimir.
 
-*...continua...*
+O comando `if` serve justamente para esses casos, ele seleciona se um grupo de comandos vai ou não ser executado, baseado no resultado de uma expressão. Ele tem essa forma:
+```c
+  if (expressão) {
+    comandos
+  }
+```
+Ele calcula o valor da expressão, que deve fornecer um valor lógico (que pode ser verdadeiro ou falso). Se o valor for falso, o comando `if` termina e a execução prossegue após o `}`.
+Se o valor for verdadeiro, os comandos dentro das chaves são executados antes de prosseguir.
+
+Para produzir valores lógicos, podemos usar os `operadores de comparação`, que comparam os valores de duas expressões numéricas e produzem verdadeiro ou falso de acordo com essa comparação. Esses operadores são:
+- `<` - `a < b` será verdadeiro se o valor de `a` for menor que o de `b`, e falso caso contrário;
+- `>` - maior;
+- `<=` - menor ou igual;
+- `>=` - maior ou igual;
+- `==` - igual (cuidado para não confundir com `=`, que é atribuição);
+- `!=` - diferente.
+
+No nosso caso, não queremos chamar a função que imprime dígitos se ela só for imprimir zeros, ou só queremos chamá-la se o número que temos a imprimir for pelo menos 10:
+```c
+void put6dig(int x)
+{
+  if (x >= 10) {
+    put5dig(x / 10);
+  }
+  putchar('0' + x % 10);
+}
+```
+Colocando isso em cada função, não vai haver chamadas a funções que imprimiriam só zeros, e nossa impressão fica mais "limpa". Isso resolve nosso primeiro problema.
+
+Resolve também parcialmente nosso segundo problema, porque podemos chamar put6dig para qualquer número e ele vai ser impresso com o número de dígitos necessário (até 6); não precisamos escolher uma função que imprime menos dígitos.
+Se o número tiver mais de 6 dígitos, vai chegar em put1dig com um valor maior que 10, e essa função vai simplesmente imprimir o dígito menos significativo desse número, ignorando os demais.
+Precisamos alterar essa função para que ela imprima os demais dígitos, em vez de ignorá-los, caso receba um número maior. Para imprimir os demais dígitos, podemos usar uma função já existente, que imprime um número qualquer até 6 dígitos:
+```c
+void put1dig(int x)
+{
+  if (x >= 10) {
+    put6dig(x / 10);
+  }
+  putchar('0' + x % 10);
+}
+```
+
+O que acontece agora é que todas nossas funções estão muito parecidas, e qualquer uma delas pode ser chamada para imprimir números de qualquer tamanho, inclusive a put1dig!
+Então, a put1dig, em vez de chamar a put6dig para imprimir os dígitos restantes, poderia chamar qualquer dessas funções, inclusive a put1dig!
+Com isso, as outras funções não seriam mais necessárias, e a put1dig pode ter seu nome alterado para `putnum`, por exemplo, para ressaltar sua capacidade de imprimir qualquer número:
+```c
+void putnum(int x)
+{
+  if (x >= 10) {
+    putnum(x / 10);
+  }
+  putchar('0' + x % 10);
+}
+```
+Isso resolve nosso segundo problema.
+
+Para a impressão de números negativos, a solução é mais simples: se o número a imprimir for negativo, basta imprimir um `-` e depois a versão positiva do número. Assim:
+```c
+void putnum(int x)
+{
+  if (x < 0) {
+    putchar('-');
+    x = -x;
+  }
+  if (x >= 10) {
+    putnum(x / 10);
+  }
+  putchar('0' + x % 10);
+}
+```
+
+### Impressão de sequências de caracteres
+
+Imprimir vários caracteres em sequência usando putchar é tedioso.
+A biblioteca de funções de entrada e saída tem funções para facilitar esse trabalho.
+Uma delas é `puts`, que recebe uma sequência de caracteres entre aspas e os envia à saída, seguidos por um caractere de fim de linha.
+Por exemplo:
+```c
+  puts("Oi, mundo!");
+```
+
+### Exercícios
+
+Faça um programa com uma função para imprimir cada um dos desenhos abaixo, e a função `main` que chama todas elas.
+As funções devem usar a função `puts` (talvez mais de uma vez) para realizar a impressão.
+
+Um ratinho:
+```
+<:3)~~~
+```
+Um gatinho:
+```
+=^..^=
+```
+Um ratão:
+```
+ _   _
+(_)_(_)
+ (o o)
+==\o/==
+```
+Um gatão:
+```
+ /\_/\
+( o.o )
+ > ^ <
+```
+
+Que vai acontecer se alterarmos a função `putnum` para, em vez de chamar `putchar` na sua última linha, chamar `ratinho`, e depois chamarmos `putnum(128)`?
+
+Faça uma função `ratinhos` que recebe um número como argumentos e imprime tantos ratinhos (por exemplo, `ratinhos(12)` deve imprimir 12 ratinhos). Baseie-se na função putnum, não pode usar comandos não vistos em aula. Não precisa se preocupar com casos como receber número negativo ou zero.
