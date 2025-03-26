@@ -392,7 +392,7 @@ void put3dig(int num)
    A única função externa ao programa que se pode usar é `putchar`.
 
 
-<a id=melhor/>
+<a id="melhor"></a>
 ### Melhor controle sobre a impressão de números
 
 Com as funções da aula anterior, conseguimos imprimir números, mas ainda tem algumas restrições inconvenientes:
@@ -403,9 +403,9 @@ Com as funções da aula anterior, conseguimos imprimir números, mas ainda tem 
 Vamos atacar esses problemas.
 Todas nossas funções têm o mesmo aspecto, que pode ser generalizado em algo como:
 ```c
-void put'N'dig(int x)
+void put_N_dig(int x)
 {
-  put'N-1'dig(x / 10);
+  put_N-1_dig(x / 10);
   putchar('0' + x % 10);
 }
 ```
