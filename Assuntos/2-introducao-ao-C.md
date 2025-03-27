@@ -672,7 +672,7 @@ int main()
   puts("Digite sua altura em m");
   altura = getnum();
 
-  imc = calc_imc();
+  imc = calc_imc(peso, altura);
 
   puts("Seu IMC é");
   putnum(imc);
