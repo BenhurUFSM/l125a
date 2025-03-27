@@ -533,3 +533,156 @@ Um gatão:
 Que vai acontecer se alterarmos a função `putnum` para, em vez de chamar `putchar` na sua última linha, chamar `ratinho`, e depois chamarmos `putnum(128)`?
 
 Faça uma função `ratinhos` que recebe um número como argumentos e imprime tantos ratinhos (por exemplo, `ratinhos(12)` deve imprimir 12 ratinhos). Baseie-se na função putnum, não pode usar comandos não vistos em aula. Não precisa se preocupar com casos como receber número negativo ou zero.
+
+<a id="a6"></a>
+### Entrada de caracteres - getchar
+
+A função `getchar()` lê um caractere do teclado e retorna o código desse caractere.
+Uma chamada a uma função que retorna um valor pode ser usada para fornecer um dado em uma expressão.
+Por exemplo, o comando
+```c
+  x = getchar();
+```
+irá fazer a chamada da função getchar e atribuir o valor retornado pela função à variável `x`.
+
+A função `getchar` retorna o código do caractere digitado. Para converter esse código no valor numérico de um dígito (supondo que se queira que o usuário digite um número), devemos subtrair o valor do código do dígito `0`, semelhante ao que fizemos com `putchar`.
+Por exemplo, o comando abaixo colocará na variável `x` o valor do dígito digitado pelo usuário (se for digitado um dígito);
+```c
+  x = getchar() - '0';
+```
+Podemos esconder esses detalhes em uma função que lê um dígito. Uma função que lê um caractere do teclado e retorna o valor do dígito digitado.
+Essa é uma função que não recebe argumentos, e que calcula (e retorna) um valor.
+Então é uma função que deve ter um tipo de retorno (`int`).
+Uma função que não seja do tipo `void` deve produzir um valor. Para que o valor seja retornado à função chamadora, devemos usar o comando `return`. Quando executa esse comando, a função em execução termina e retorna à função chamadora. Comandos após o `return` não são executados.
+A função que lê um dígito poderia então ser assim:
+```c
+  int getdig()
+  {
+    dig = getchar() - '0';
+    return dig;
+  }
+```
+E uma chamada a ela poderia ser assim:
+```c
+  x = getdig();
+```
+Podemos ignorar os caracteres indesejados até que seja digitado um dígito:
+```c
+int getdig()
+{
+  int dig;
+  dig = getchar() - '0';
+  if (dig < 0) {
+    // o caractere digitado é menor que '0', ignora e retorna o valor da função que
+    //   lê um dígito válido
+    return getdig();
+  }
+  if (dig > 9) {
+    return getdig();
+  }
+  // o caractere digitado era um dígito válido!
+  return dig;
+}
+```
+
+Mas essa função lê o valor de somente um dígito.
+Gostaríamos de poder ler valores com mais dígitos.
+Para converter os valores de dois dígitos no valor que esses dois dígitos juntos representam, devemos somá-los, respeitando o peso que eles têm devido à posição (o primeiro dígito é o das dezenas, vale 10 vezes mais).
+```c
+  int get2dig()
+  {
+    int d1, d2;
+    int num;
+    d1 = getdig();
+    d2 = getdig();
+    num = d1 * 10 + d2;
+    return num;
+  }
+```
+Uma função parecida, para ler um número de 3 dígitos, usando a anterior e colocando tudo em uma só expressão:
+```c
+int get3dig()
+{
+  return get2dig() * 10 + getdig();
+}
+```
+
+É um pouco mais complicado de fazer como fizemos com a escrita de números, para fazer uma função que leia um número com qualquer número de dígitos. Vamos deixar para mais tarde, quando tivermos mais alguns comandos da linguagem. Vamos nos contentar por enquando com números de 3 dígitos.
+
+Em aula, fizemos um programa para calcular o IMC de uma pessoa, ficou algo parecido com:
+```c
+#include <stdio.h>
+
+int getdig()
+{
+  int dig;
+  dig = getchar() - '0';
+  if (dig < 0) {
+    // o caractere digitado é menor que '0', ignora e retorna o valor da função que
+    //   lê um dígito válido
+    return getdig();
+  }
+  if (dig > 9) {
+    return getdig();
+  }
+  // o caractere digitado era um dígito válido!
+  return dig;
+}
+
+int get2dig()
+{
+  return getdig() * 10 + getdig();
+}
+
+int getnum()
+{
+  return get2dig() * 10 + getdig();
+}
+
+void putnum(int num)
+{
+  if (num < 0) {
+    putchar('-');
+    num = -num;
+  }
+  if (num >= 10) {
+    putnum(num / 10);
+  }
+  putchar(num % 10 + '0');
+}
+
+int quadrado(int x)
+{
+  return x * x;
+}
+
+int calc_imc(int p, int a)
+{
+  return p * 10000 / quadrado(a);
+}
+
+int main()
+{
+  int peso, altura;
+  int imc;
+
+  puts("Cálculo do IMC");
+  puts("Digite seu peso em kg");
+  peso = getnum();
+  puts("Digite sua altura em m");
+  altura = getnum();
+
+  imc = calc_imc();
+
+  puts("Seu IMC é");
+  putnum(imc);
+  putchar('\n');
+}
+```
+
+### Exercícios
+
+Faça um programa, usando as funções de leitura e escrita de inteiros do programa acima, que:
+1. Lê o valor de um litro de gasolina em centavos, o consumo médio de um carro em hm por litro e uma distância a percorrer em km, e calcula e imprime o custo da gasolina para realizar esse percurso. Lembrete: 1 km tem 10 hm.
+
+*continua...*
