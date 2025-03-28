@@ -4,7 +4,7 @@ ELC1065 DLSC/CT/UFSM\
 professor: Benhur Stein ([benhur+l125a@inf.ufsm.br](mailto:benhur%2bl125a@inf.ufsm.br))\
 terças e quintas, 8h30 (turma CC1) ou 14h30 (turmas CC2, SI2, CC3, SI3)\
 sala 334, prédio 7 (principal do CT)\
-aluno monitor: Espero que Tenha ([espero.q.tenha@gmail.com](mailto:espero.q.tenha@gmail.com))
+aluno monitor: Gabriel da Luz ([marquezan.luz@acad.ufsm.br](mailto:marquezan.luz@acad.ufsm.br), ✆ 55 997 124 154)
 
 ## Desenvolvimento da disciplina
 
