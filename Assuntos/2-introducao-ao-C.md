@@ -683,6 +683,12 @@ int main()
 ### Exercícios
 
 Faça um programa, usando as funções de leitura e escrita de inteiros do programa acima, que:
-1. Lê o valor de um litro de gasolina em centavos, o consumo médio de um carro em hm por litro e uma distância a percorrer em km, e calcula e imprime o custo da gasolina para realizar esse percurso. Lembrete: 1 km tem 10 hm.
 
-*continua...*
+1. Lê o valor de um litro de gasolina em centavos, o consumo médio de um carro em hm por litro e uma distância a percorrer em km, e calcula e imprime o custo da gasolina para realizar esse percurso, em reais. Lembrete: 1 km tem 10 hm; 1 real tem 100 centavos.
+Use uma função para fazer o cálculo.
+
+2. Lê o valor da temperatura em ºC e imprime a temperatura equivalente em ºF. Use uma função para fazer o cálculo.
+
+3. Lê o valor da temperatura e mais um caractere que pode ser 'c' ou 'f'. Se o caractere for 'c', a temperatura lida está em ºC e deve ser convertida para ºF; se for 'f', a temperatura está em ºF e deve ser convertida em ºC. As conversões devem ser realizadas por funções.
+
+4. Faça uma programa que lê um caractere e depois três números que representam a largura, comprimento e profundidade de uma piscina. O programa deve então calcular e imprimir a capacidade da piscina em litros. A piscina tem o formato de um paralelepípedo. O primeiro caractere diz se as dimensões da piscina foram fornecidos em metros (se o caractere for 'm') ou em centímetros (se for 'c').
