@@ -692,3 +692,50 @@ Use uma função para fazer o cálculo.
 3. Lê o valor da temperatura e mais um caractere que pode ser 'c' ou 'f'. Se o caractere for 'c', a temperatura lida está em ºC e deve ser convertida para ºF; se for 'f', a temperatura está em ºF e deve ser convertida em ºC. As conversões devem ser realizadas por funções.
 
 4. Faça uma programa que lê um caractere e depois três números que representam a largura, comprimento e profundidade de uma piscina. O programa deve então calcular e imprimir a capacidade da piscina em litros. A piscina tem o formato de um paralelepípedo. O primeiro caractere diz se as dimensões da piscina foram fornecidos em metros (se o caractere for 'm') ou em centímetros (se for 'c').
+
+5. O que será impresso pelo programa abaixo? Simule o funcionamento do computador ao executar o pragrama, antes de executá-lo em um computador. Certifique-se de entender eventuais diferenças entre a tua simulação e a execução no computador.
+```c
+#include <stdio.h>
+
+void g(int x)
+{
+  int y;
+  putchar(x);
+  y = x + 1;
+  x = y + 1;
+  putchar(y + 1);
+}
+
+void h(int x)
+{
+  x = x - 1;
+  putchar(x + 1);
+  x = x + 2;
+}
+
+void f(int x)
+{
+  putchar(x);
+  x = x + 1;
+  putchar(x);
+}
+
+void ff(int x, int y)
+{
+  putchar(y);
+  putchar(x);
+}
+
+int main()
+{
+  int x;
+  x = 'a';
+  putchar('\n');
+  f(x);
+  g(x);
+  h(x);
+  ff('i', 'x');
+  ff('\n', '\n');
+}
+```
+
