@@ -693,7 +693,8 @@ Use uma função para fazer o cálculo.
 
 4. Faça uma programa que lê um caractere e depois três números que representam a largura, comprimento e profundidade de uma piscina. O programa deve então calcular e imprimir a capacidade da piscina em litros. A piscina tem o formato de um paralelepípedo. O primeiro caractere diz se as dimensões da piscina foram fornecidos em metros (se o caractere for 'm') ou em centímetros (se for 'c').
 
-5. O que será impresso pelo programa abaixo? Simule o funcionamento do computador ao executar o pragrama, antes de executá-lo em um computador. Certifique-se de entender eventuais diferenças entre a tua simulação e a execução no computador.
+5. O que será impresso pelo programa abaixo? Simule o funcionamento do computador ao executar o programa, antes de executá-lo em um computador.
+Certifique-se de entender eventuais diferenças entre a sua simulação e a execução no computador.
 ```c
 #include <stdio.h>
 
