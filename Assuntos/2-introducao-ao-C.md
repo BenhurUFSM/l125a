@@ -680,6 +680,7 @@ int main()
 }
 ```
 
+<a id="ex6"></a>
 ### Exercícios
 
 Faça um programa, usando as funções de leitura e escrita de inteiros do programa acima, que:

@@ -4,7 +4,7 @@ ELC1065 DLSC/CT/UFSM\
 professor: Benhur Stein ([benhur+l125a@inf.ufsm.br](mailto:benhur%2bl125a@inf.ufsm.br))\
 terças e quintas, 8h30 (turma CC1) ou 14h30 (turmas CC2, SI2, CC3, SI3)\
 sala 334, prédio 7 (principal do CT)\
-aluno monitor: Gabriel da Luz ([marquezan.luz@acad.ufsm.br](mailto:marquezan.luz@acad.ufsm.br), ✆ 55 997 124 154)
+aluno monitor: Gabriel Marquezan Pozzati da Luz ([marquezan.luz@acad.ufsm.br](mailto:marquezan.luz@acad.ufsm.br), ✆ 55 997 124 154)
 
 ## Desenvolvimento da disciplina
 
@@ -45,7 +45,7 @@ Os assuntos vistos em aula serão listados aqui.
 |    3 | 18mar  | [introdução ao C](Assuntos/2-introducao-ao-C.md)
 |    4 | 20mar  | [primeiro programa C](Assuntos/2-introducao-ao-C.md#mpp)
 |    5 | 25mar  | [melhor controle sobre os números](Assuntos/2-introducao-ao-C.md#melhor)
-|    6 | 27mar  | [entrada com `getchar`; exercícios](Assuntos/2-introducao-ao-C.md#a6)
+|    6 | 27mar  | [entrada com `getchar`](Assuntos/2-introducao-ao-C.md#a6), [exercícios](/Assuntos/2-introducao-ao-C.md#ex6)
 
 
 ## Exercícios, trabalhos
