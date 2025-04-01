@@ -6,6 +6,8 @@ terças e quintas, 8h30 (turma CC1) ou 14h30 (turmas CC2, SI2, CC3, SI3)\
 sala 334, prédio 7 (principal do CT)\
 aluno monitor: Gabriel Marquezan Pozzati da Luz ([marquezan.luz@acad.ufsm.br](mailto:marquezan.luz@acad.ufsm.br), ✆ 55 997 124 154)
 
+** O guarda-chuva encontrado no final da aula de 1 abril de manhã foi colocado na sessão de achados e perdidos, junto à portaria do CT. **
+
 ## Desenvolvimento da disciplina
 
 Os canais de comunicação entre o professor e os alunos são:
