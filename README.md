@@ -48,6 +48,7 @@ Os assuntos vistos em aula serão listados aqui.
 |    4 | 20mar  | [primeiro programa C](Assuntos/2-introducao-ao-C.md#mpp)
 |    5 | 25mar  | [melhor controle sobre os números](Assuntos/2-introducao-ao-C.md#melhor)
 |    6 | 27mar  | [entrada com `getchar`](Assuntos/2-introducao-ao-C.md#a6), [exercícios](/Assuntos/2-introducao-ao-C.md#ex6)
+|    7 |  1abr  | [`printf`, `scanf`](/Aulas/a7.md)
 
 
 ## Exercícios, trabalhos
