@@ -49,6 +49,7 @@ Os assuntos vistos em aula serão listados aqui.
 |    5 | 25mar  | [melhor controle sobre os números](Assuntos/2-introducao-ao-C.md#melhor)
 |    6 | 27mar  | [entrada com `getchar`](Assuntos/2-introducao-ao-C.md#a6), [exercícios](/Assuntos/2-introducao-ao-C.md#ex6)
 |    7 |  1abr  | [`printf`, `scanf`](/Aulas/a7.md)
+|    8 |  3abr  | [tipos de dados](/Assuntos/3-tipos_de_dados.md)
 
 
 ## Exercícios, trabalhos
