@@ -64,6 +64,8 @@ Para ler ou escrever valores desses tipos, devemos usar formatos específicos co
 | `double`      | `%f` ou `%lf`| `%lf` |
 | `long double` | `%Lf`      | `%Lf` |
 
+Além desses tipos, existe o tipo `bool`, usado para representar valores lógicos.
+Só existem dois valores desse tipo, e eles recebem nomes, `true` para representar verdadeiro e `false` para representar falso. Esses valores são transformados para `1` e `0` respectivamente, se forem convertidos para um valor numérico. A conversão contrária, de um valor numérico em `bool`, converte o valor `0` em `false` e qualquer outro valor em `true`.
 
 ### Mais detalhes
 
