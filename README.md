@@ -60,7 +60,7 @@ A descrição dos exercícios e trabalhos a entregar será colocada abaixo.
 |     N |     prazo | descrição
 | ----: | --------: | :-----------
 |    e1 | 17mar, 15h | [média de 3](Trabalhos/e1.md)
-|    t1 | asd       | menos breve
+|    t1 | 14abr     | [tabela ASCII](Trabalhos/t1.md)
 | ...   | ...       | ...
 | final | 30jun     | [entrega final](final.md)
 

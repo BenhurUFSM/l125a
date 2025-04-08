@@ -381,7 +381,7 @@ Como queremos imprimir valores sucessivos, o valor a imprimir deve ser increment
 ```
 [!NOTE] Pode-se incrementar o valor também usando o operador de atribuição com soma (`valor += 1;`) ou com o operador de incremento (`valor++;`).
 
-O primeiro valor a ser impresso é 1, então devemor colocar esse valor na variável antes da primeira impressão (devemos inicializar a variável com 1).
+O primeiro valor a ser impresso é 1, então devemos colocar esse valor na variável antes da primeira impressão (devemos inicializar a variável com 1).
 Nosso programa fica, então:
 ```c
   int valor;
@@ -453,8 +453,8 @@ Se a variável `vezes` contém o número de repetições que se quer, usa-se ger
 3. Altere o programa anterior para imprimir um valor por linha.
 4. Altere novamente para imprimir o valor em decimal e binário, com 2 e 5 casas:
    ```
-   20 010100
-   21 010101
+   20 10100
+   21 10101
    ...
    ```
 5. Altere novamente, para imprimir os números entre 32 e 126 (correspondem aos caracteres imprimíveis da tabela ASCII), em decimal (3 casas, preenchido com espaços), hexadecimal (2 casas), binário (7 casas preenchido com zeros) e o caractere que tem esse código:
