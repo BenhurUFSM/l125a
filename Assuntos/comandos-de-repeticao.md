@@ -476,5 +476,22 @@ int aleatorio_entre(int menor, int maior)
   return menor + rand() % (maior - menor + 1);
 }
 ```
+5. Faça uma função que imprime a tabuada do número recebido em argumento, no seguinte formato (caso receba 2 como argumento):
+   ```
+   2x1 =  2
+   2x2 =  4
+   2x3 =  6
+   2x4 =  8
+   2x5 = 10
+   2x6 = 12
+   2x7 = 14
+   2x8 = 16
+   2x9 = 18
+   ```
+6. Faça um programa que imprime toda a tabuada (de 1 a 9), usando a função do exercício anterior. Separe-as com uma linha contendo 8 caracteres `-`. Use uma função para desenhar esses 8 caracteres - essa função deve receber como argumento o caractere e o número de vezes que se quer imprimí-lo.
+7. Use a função de selecionar a cor de fundo para desenhar um quadrado degradê cinza vertical na tela. Desenhe 16 linhas, com 32 espaços cada. No início de cada linha, escolha a cor com os componentes R, G e B iguais ao número da linha (0 a 15) multiplicado por 16. No final de cada linha, escolha a cor normal antes do enter.
+8. Inverta o degradê (claro em cima, escuro em baixo).
+9. Consegue fazer o degradê horizontal?
+9. Colorido?
 
 * * *
