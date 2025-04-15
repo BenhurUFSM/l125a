@@ -49,6 +49,8 @@ Os assuntos vistos em aula serão listados aqui.
 |    7 |  1abr  | [`printf`, `scanf`](/Aulas/a7.md)
 |    8 |  3abr  | [tipos de dados](Assuntos/3-tipos_de_dados.md)
 |    9 |  8abr  | [comandos de repetição](/Assuntos/comandos-de-repeticao.md)
+|   10 | 10abr  | exercícios
+|   11 | 15abr  | [exercícios](Aulas/a11.md)
 
 
 ## Exercícios, trabalhos
