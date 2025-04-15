@@ -6,8 +6,6 @@ terças e quintas, 8h30 (turma CC1) ou 14h30 (turmas CC2, SI2, CC3, SI3)\
 sala 334, prédio 7 (principal do CT)\
 aluno monitor: Gabriel Marquezan Pozzati da Luz ([marquezan.luz@acad.ufsm.br](mailto:marquezan.luz@acad.ufsm.br), ✆ 55 997 124 154)
 
-** O guarda-chuva encontrado no final da aula de 1 abril de manhã foi colocado na sessão de achados e perdidos, junto à portaria do CT. **
-
 ## Desenvolvimento da disciplina
 
 Os canais de comunicação entre o professor e os alunos são:
@@ -68,6 +66,8 @@ A descrição dos exercícios e trabalhos a entregar será colocada abaixo.
 
 Informações individuais sobre os alunos (identificação, datas para a entrevista final, notas, etc) estarão na [planilha](https://docs.google.com/spreadsheets/d/1ypKaq3P_jSKWu54xONsxRbuhFwE5L_AGF1RG1tDw5FA/edit?usp=sharing).
 A planilha vai sendo preenchida durante o semestre.
+
+O comentários etc do monitor estão na [planilha do monitor](https://docs.google.com/spreadsheets/d/1TXViLHx5WqGxBjx9ehkCL-niRJWN7neYsxqf-Ov9Sdg/edit?usp=sharing).
 
 As notas aparecerão após o processamento das entrevistas.
 Quem não tiver nota 7, o exame é provavelmente dia 15jul.
