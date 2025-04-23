@@ -52,6 +52,7 @@ Os assuntos vistos em aula serão listados aqui.
 |   10 | 10abr  | exercícios
 |   11 | 15abr  | [exercícios](Aulas/a11.md)
 |   12 | 17abr  | [exercícios](Aulas/a12.md)
+|   13 | 22abr  | [vetores](Assuntos/vetor.md)
 
 
 ## Exercícios, trabalhos
