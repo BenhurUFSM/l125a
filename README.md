@@ -71,7 +71,8 @@ A descrição dos exercícios e trabalhos a entregar será colocada abaixo.
 Informações individuais sobre os alunos (identificação, datas para a entrevista final, notas, etc) estarão na [planilha](https://docs.google.com/spreadsheets/d/1ypKaq3P_jSKWu54xONsxRbuhFwE5L_AGF1RG1tDw5FA/edit?usp=sharing).
 A planilha vai sendo preenchida durante o semestre.
 
-O comentários etc do monitor estão na [planilha do monitor](https://docs.google.com/spreadsheets/d/1TXViLHx5WqGxBjx9ehkCL-niRJWN7neYsxqf-Ov9Sdg/edit?usp=sharing).
+O comentários etc do monitor estão na [nova planilha do monitor](https://docs.google.com/spreadsheets/d/1SS2P400hWMZY7n4PcyBN3uJkqd-BbC1ZnciOIR0pSTU/edit?usp=sharing)
+<!--(https://docs.google.com/spreadsheets/d/1TXViLHx5WqGxBjx9ehkCL-niRJWN7neYsxqf-Ov9Sdg/edit?usp=sharing).-->
 
 As notas aparecerão após o processamento das entrevistas.
 Quem não tiver nota 7, o exame é provavelmente dia 15jul.
