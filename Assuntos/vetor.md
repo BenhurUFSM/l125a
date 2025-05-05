@@ -429,3 +429,30 @@ int main()
 2. Faça uma função que copia uma string para um vetor, copiando somente as letras, e transformando minúsculas em maiúsculas. Usando essa função, o resultado da cópia de "Socorram-me, subi no onibus em Marrocos" deve ser um palíndromo.
 1. Faça uma função que compara duas strings. A função deve receber duas strings e retornar um int, que deve ser 0 se as strings são iguais, um número negativo se a primeira string vem antes da segunda em um dicionário e positivo caso contrário. Uma forma simples de calcular é subtraindo o primeiro caractere diferente das duas strings (sem esquecer de parar no primeiro `'\0'`). A biblioteca padrão tem uma função para fazer isso, chamada `strcmp`, e é a forma de se comparar strings.
 1. Faça uma função recebe um vetor de char, imprime a string que está nesse vetor, pede para o usuário digitar uma string com "sim" ou "não", e retorna `true` se for digitado "sim" ou `false` se for digitado "nao" ou "não". Se for digitado outro texto, volta a pedir ao usuário para digitar "sim" ou "não", até que o usuário faça o que é pedido. Use a função acima para verificar a string digitada.
+
+### Mais exercícios
+
+1. Faça uma função que recebe um vetor com uma string e inverte os caracteres dessa string. Por exemplo, se receber "teste", deve alterar para "etset".
+   Com essa função, dá para implementar a função de detecção de palíndromo assim:
+   ```c
+   bool palindromo(char s[])
+   {
+     char cp[strlen(s)+1];
+     strcpy(cp, s);
+     inverte(cp);
+     return strcmp(cp, s) == 0;
+   }
+   ```
+2. Faça uma função que recebe um vetor com uma string e um char, e retorna um int que diz em que posição da string está a primeira ocorrência do char, ou -1, caso a string não contenha o char. 
+   Com essa função, seria possível implementar a função que diz se um char é uma vogal assim:
+   ```c
+   bool vogal(char c)
+   {
+     return achachar("aeiou", minusculiza1(c)) != -1;
+   }
+   ```
+3. Faça uma função que recebe dois vetores com strings, e retorna um int que diz a posição no primeiro vetor onde está a primeira ocorrência de algum dos caracteres da segunda string, ou -1 caso a primeira string não contenha nenhum caractere da segunda.
+   Por exemplo, chamando essa função com "teste 82.5" e "0123456789", retorna 6, a posição do primeiro dígito da primeira string.
+4. Faça uma função que recebe um vetor com uma string e retorna um bool que diz se a string pode ser uma senha. Uma senha deve ter no mínimo 8 caracteres, pelo menos uma minúscula, uma maiúscula, um dígito e um caractere que não é nem letra nem dígito.
+5. Faça uma função que recebe um inteiro e um vetor de char. O inteiro diz o tamanho do vetor. A função deve ler uma linha da entrada (ler caracteres com getchar até o `\n`) e colocar esses caracteres no vetor como uma string. A string deve ser corretamente terminada com '\0', não deve conter o '\n', não deve estrapolar a capacidade do vetor, deve descartar os caracteres que não cabem, caso a linha seja muito grande. Deve suportar uma linha vazia (se o primeiro caractere for '\n', deve retornar uma string vazia válida, com '\0' no início do vetor).
+6. Faça uma função para ler uma nova senha do usuário. A função recebe o tamanho de um vetor e um vetor de char, que deve preencher com a senha digitada. A função deve ler a senha 2 vezes, e só aceitar se as duas forem iguais e se a primeira for uma senha válida. Se a primeira for vazia, deve retornar com o vetor contendo uma string vazia. Caso a primeira não seja válida, deve pedir novamente até que seja. Caso a segunda não seja igual à primeira, deve pedir novamente a primeira.
