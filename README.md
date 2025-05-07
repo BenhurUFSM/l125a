@@ -55,6 +55,7 @@ Os assuntos vistos em aula serão listados aqui.
 |   13 | 22abr  | [vetores](Assuntos/vetor.md)
 |      | 24abr  | professor faltou
 |   14 | 29abr  | [strings](Assuntos/vetor.md#string)
+|   15 |  6mai  | [exercícios](/Aulas/a15.md)
 
 
 ## Exercícios, trabalhos
