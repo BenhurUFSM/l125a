@@ -456,3 +456,50 @@ int main()
 4. Faça uma função que recebe um vetor com uma string e retorna um bool que diz se a string pode ser uma senha. Uma senha deve ter no mínimo 8 caracteres, pelo menos uma minúscula, uma maiúscula, um dígito e um caractere que não é nem letra nem dígito.
 5. Faça uma função que recebe um inteiro e um vetor de char. O inteiro diz o tamanho do vetor. A função deve ler uma linha da entrada (ler caracteres com getchar até o `\n`) e colocar esses caracteres no vetor como uma string. A string deve ser corretamente terminada com '\0', não deve conter o '\n', não deve estrapolar a capacidade do vetor, deve descartar os caracteres que não cabem, caso a linha seja muito grande. Deve suportar uma linha vazia (se o primeiro caractere for '\n', deve retornar uma string vazia válida, com '\0' no início do vetor).
 6. Faça uma função para ler uma nova senha do usuário. A função recebe o tamanho de um vetor e um vetor de char, que deve preencher com a senha digitada. A função deve ler a senha 2 vezes, e só aceitar se as duas forem iguais e se a primeira for uma senha válida. Se a primeira for vazia, deve retornar com o vetor contendo uma string vazia. Caso a primeira não seja válida, deve pedir novamente até que seja. Caso a segunda não seja igual à primeira, deve pedir novamente a primeira.
+
+<a id=matriz></a>
+### Matrizes
+
+Além de vetores unidimensionais, a linguagem C suporta também vetores com mais dimensões, também chamados de matrizes.
+O uso é semelhante a vetores, com um par de colchetes a mais para cada dimensão.
+```c
+  double mat[10][15]; // declara uma matriz de 10 linhas e 15 colunas de números double
+  bool res[2][6][8];
+  int c[2][3] = { { 1, 2, 3 }, {9, 8, 2} };
+  mat[5][2] = 3.14;
+  printf("%d", c[1][2]);
+```
+Abaixo está um exemplo de um programa com uma função que preenche uma matriz com dados digitados pelo usuário e outra que realiza cálculos sobre os valores de uma matriz.
+```c
+#include <stdio.h>
+
+void le_mat(int m[3][3])
+{
+  printf("Digite os valores da matriz, conforme pedido abaixo:\n");
+  for (int i=0; i<3; i++) {
+    for (int j=0; j<3; j++) {
+      printf("%d,%d: ", i, j);
+      scanf("%d", &m[i][j]);
+    }
+  }
+}
+
+int conta_pares(int m[3][3])
+{
+  int c = 0;
+  for (int i=0; i<3; i++) {
+    for (int j=0; j<3; j++) {
+      if (m[i][j] % 2 == 0) c++;
+    }
+  }
+  return c;
+}
+
+int main()
+{
+  int mat[3][3];
+  le_mat(mat);
+  printf("sua matriz tem %d números pares\n", conta_pares(mat));
+}
+```
+
