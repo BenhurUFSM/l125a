@@ -7,11 +7,11 @@
 #ifndef TECLADO_H
 #define TECLADO_H
 
-// constantes para representar as teclas de controle
-// usa uma enumeração para gerar os valores de teclas que estão sendo traduzidas
-// usa typedef para definir um tipo (tecla) que será usado para declarar variáveis que
-//   recebem esses valores
-typedef enum tecla {
+// constantes para representar as teclas de controle.
+// usa uma enumeração para gerar os valores de teclas que estão sendo traduzidas.
+// usa typedef para definir um tipo (tecla_t) que será usado para declarar variáveis que
+//   recebem esses valores.
+typedef enum {
   // nenhuma tecla foi pressionada
   T_NADA = 0,
   // a tecla esc
@@ -30,7 +30,7 @@ typedef enum tecla {
   T_BS,
   T_BACKSPACE = T_BS,
   T_DEL,
-} tecla;
+} tecla_t;
 
 // funções
 
@@ -44,6 +44,6 @@ void tec_fim();
 
 // função que lê a próxima tecla digitada
 // retorna T_NADA se não houver tecla digitada
-tecla tec_tecla();
+tecla_t tec_tecla();
 
 #endif // TECLADO_H

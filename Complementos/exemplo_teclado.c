@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 // altera o valor de [*px, *py] de acordo com a tecla
-void trata_tecla(tecla tec, int *px, int *py)
+void trata_tecla(tecla_t tec, int *px, int *py)
 {
   if (tec == T_CIMA) (*py)--;
   if (tec == T_BAIXO) (*py)++;
@@ -61,7 +61,7 @@ int main()
 
   for (;;) {
     // processa uma tecla
-    tecla tec = tec_tecla();
+    tecla_t tec = tec_tecla();
     if (tec == T_END) break;
     trata_tecla(tec, &x, &y);
 

@@ -1,12 +1,11 @@
-
 // teclado.c
 // 
 // implementação de funções para acesso ao teclado em modo cru
 // para l125a
 
 #include "teclado.h"
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdlib.h>     // para ter 'system'
+#include <unistd.h>     // para ter 'read'
 
 // função que coloca o teclado em modo cru
 // deve ser chamada no início do programa
@@ -47,7 +46,7 @@ static char le_1()
 }
 
 // a primeira tecla foi esc, traduz a sequência
-static tecla tec_esc()
+static tecla_t tec_esc()
 {
   char t2 = le_1();
   // só estão sendo tratadas algumas das sequências esc-[
@@ -80,9 +79,9 @@ static tecla tec_esc()
 // as demais teclas enviam uma sequência de códigos, iniciada pelo caractere ESC (código 27)
 //   esta função traduz alguns (bem poucos) desses códigos para valores T_* definidos
 //   em teclado.h
-tecla tec_tecla()
+tecla_t tec_tecla()
 {
-  tecla tec = le_1();
+  tecla_t tec = le_1();
   if (tec == 127) tec = T_BS;
   else if (tec == '\r') tec = T_ENTER;
   else if (tec == T_ESC) {
