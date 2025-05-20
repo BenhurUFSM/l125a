@@ -58,6 +58,7 @@ Os assuntos vistos em aula serão listados aqui.
 |   15 |  6mai  | [exercícios](/Aulas/a15.md)
 |   16 |  8mai  | [matrizes](Assuntos/vetor.md#matriz), t2
 |   17 | 13mai  | [referências, ponteiros](Assuntos/ponteiros.md)
+|   18 | 15mai  | [registros](Assuntos/registros.md)
 
 
 ## Exercícios, trabalhos
