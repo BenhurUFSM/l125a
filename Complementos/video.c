@@ -7,7 +7,7 @@
 #include <time.h>     // para ter 'clock_gettime'
 
 // nanosegundos entre desenhos de tela (50M dá 20 telas por segundo)
-#define NS_POR_TELA 500000000
+#define NS_POR_TELA 50000000
 
 void vid_inicia()
 {
@@ -61,7 +61,7 @@ void vid_atualiza()
   struct timespec agora;
   clock_gettime(CLOCK_REALTIME, &agora);
   long diff_s = agora.tv_sec - ultimo.tv_sec;
-  if (diff_s > 0 && diff_s < 2) {
+  if (diff_s >= 0 && diff_s < 2) {
     long diff_ns = diff_s * 1000000000
                  + (agora.tv_nsec - ultimo.tv_nsec);
     if (diff_ns < NS_POR_TELA) {
@@ -69,9 +69,6 @@ void vid_atualiza()
       struct timespec espera;
       espera.tv_sec = 0;
       espera.tv_nsec = NS_POR_TELA - diff_ns;
-      char s[50];
-      sprintf(s, " %ld ", espera.tv_nsec);
-      vid_imps(s);
       nanosleep(&espera, NULL);
     }
   }

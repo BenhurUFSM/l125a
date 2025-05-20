@@ -116,7 +116,7 @@ int main()
   // posição do perseguidor
   posicao_t monstro = { LIN0, COL0 };
   // temporizador para o movimento do perseguidor
-  int t = 5;
+  int t = 10;
   // contador de tempo de fuga
   int sobrevivencia = 0;
   // inicializa o teclado e o vídeo
@@ -132,7 +132,7 @@ int main()
 
     // processa movimentos automáticos (passagem do tempo)
     if (t-- == 0) {
-      t = 5;
+      t = 10;
       move_monstro(&monstro, jogador);
     }
 

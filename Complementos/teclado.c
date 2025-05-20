@@ -17,7 +17,7 @@ void tec_inicia()
   //   min 0 - permite que a leitura possa ler 0 caracteres (não bloqueia o programa)
   //   time 1 - espera até 1 décimo de segundo antes de desbloquear o programa caso nada
   //            seja digitado. colocando 0 o programa não bloqueia.
-  system("stty raw -echo min 0 time 1");
+  system("stty raw -echo min 0 time 0");
 }
 
 // função que devolve o teclado para o modo normal
