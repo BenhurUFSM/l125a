@@ -21,7 +21,7 @@ typedef enum {
   T_BAIXO,
   T_DIREITA,
   T_ESQUERDA,
-  // outrar teclas
+  // outras teclas
   T_ENTER,
   T_PGUP,
   T_PGDN,
