@@ -61,6 +61,7 @@ Os assuntos vistos em aula serão listados aqui.
 |   18 | 15mai  | [registros](Assuntos/registros.md)
 |   19 | 20mai  | [argumentos de main](Assuntos/args_main.md)
 |   20 | 22mai  | [arquivos](Assuntos/arquivos.md)
+|   21 | 27mai  | [alocação dinâmica de memória](Assuntos/alocacao.md)
 
 
 ## Exercícios, trabalhos
