@@ -176,6 +176,6 @@ Então, quando se usa realloc, é necessário gerenciar esses 2 ponteiros. Uma f
 
 Uma função alternativa de alocação, por vezes preferível em relação à malloc porque inicializa a memória alocada com zeros e deixa mais explícita a intenção de se alocar um vetor é calloc. Em vez de `p = malloc(n * sizeof(xis))`, pode-se usar `p = calloc(n, sizeof(xis))`.
 
-O desenho abaixo pode ajudar... (A última linha é bobagem, de onde tiraria o 57? Na prática a memória em 57 seria perdida.)
+O desenho abaixo pode ajudar... (A última linha é bobagem, de onde tiraria o 57? Na prática a memória em 57 seria perdida.) Esse desenho é uma simplificação em relação ao que acontece geralmente em um sistema real de alocação de memória.
 
 ![](aloc.png)
