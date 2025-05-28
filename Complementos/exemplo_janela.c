@@ -53,7 +53,7 @@ typedef struct {
   tamanho_t tamanho_janela;
   retangulo_t contorno_janela;
   // necessários no início de cada partida
-  char tecla;
+  tecla_t tecla;
   int pontos;
   float pontos_do_tiro;
   ponto_t pos_raio;
