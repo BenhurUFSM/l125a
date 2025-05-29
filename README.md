@@ -73,7 +73,7 @@ A descrição dos exercícios e trabalhos a entregar será colocada abaixo.
 |    e1 | 17mar, 15h | [média de 3](Trabalhos/e1.md)
 |    t1 | 14abr     | [tabela ASCII](Trabalhos/t1.md)
 |    t2 | 26mai     | [quadradinhos deslizantes](Trabalhos/t2.md)
-| ...   | ...       | ...
+|    t3 |           | [t3](Trabalhos/t3.md)
 | final | 30jun     | [entrega final](final.md)
 
 ## Notas, etc
