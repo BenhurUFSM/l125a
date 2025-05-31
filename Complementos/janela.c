@@ -71,7 +71,7 @@ static void j_inicializa_janela(tamanho_t tamanho, char nome[])
 
 static ALLEGRO_COLOR conv_cor(cor_t cor)
 {
-  return (ALLEGRO_COLOR){cor.vermelho, cor.verde, cor.azul, cor.opacidade};
+  return al_premul_rgba_f(cor.vermelho, cor.verde, cor.azul, cor.opacidade);
 }
 
 static void j_inicializa_teclado(void)
