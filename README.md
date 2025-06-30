@@ -78,7 +78,7 @@ A descrição dos exercícios e trabalhos a entregar será colocada abaixo.
 
 ## Notas, etc
 
-Informações individuais sobre os alunos (identificação, datas para a entrevista final, notas, etc) estarão na [planilha](https://docs.google.com/spreadsheets/d/1ypKaq3P_jSKWu54xONsxRbuhFwE5L_AGF1RG1tDw5FA/edit?usp=sharing).
+Informações individuais sobre os alunos (identificação, **datas para a entrevista final**, notas, etc) estarão na [planilha](https://docs.google.com/spreadsheets/d/1ypKaq3P_jSKWu54xONsxRbuhFwE5L_AGF1RG1tDw5FA/edit?usp=sharing).
 A planilha vai sendo preenchida durante o semestre.
 
 O comentários etc do monitor estão na [nova planilha do monitor](https://docs.google.com/spreadsheets/d/1SS2P400hWMZY7n4PcyBN3uJkqd-BbC1ZnciOIR0pSTU/edit?usp=sharing)
