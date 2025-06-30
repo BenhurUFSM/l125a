@@ -6,7 +6,7 @@ Coloque a versão final dos trabalhos (t1, t2 e t3) em um diretório chamado `l1
 Coloque também nesse diretório um arquivo `l1-av-`*fulano*.pdf (por exemplo, `l1-av-benhur.pdf`) contendo um texto de auto-avaliação.
 Comprima esse diretório, anexe a um mail e envie para o endereço da disciplina.
 
-Além desse e-mail, tem que ter uma conversa com o professor. O horário da conversa vai ser definido por ordem de chegada dos e-mails. Caso tenha alguma restrição/preferência de dia/horário, por favor mencione no e-mail.
+Além desse e-mail, tem que ter uma conversa com o professor. O horário da conversa vai ser definido por ordem de chegada dos e-mails, e colocado da planilha de notas. Caso tenha alguma restrição/preferência de dia/horário, por favor mencione no e-mail.
 
 O período previsto para essa conversa é, em princípio, 1 a 10 de julho.
 
