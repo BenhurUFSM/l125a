@@ -76,6 +76,8 @@ A descrição dos exercícios e trabalhos a entregar será colocada abaixo.
 |    t3 |           | [t3](Trabalhos/t3.md)
 | final | 30jun     | [entrega final](final.md)
 
+**Quem ainda não teve a conversa sobre a entrega final e quem estiver em exame, consulte a planilha (abaixo) para instruções.**
+
 ## Notas, etc
 
 Informações individuais sobre os alunos (identificação, **datas para a entrevista final**, notas, etc) estarão na [planilha](https://docs.google.com/spreadsheets/d/1ypKaq3P_jSKWu54xONsxRbuhFwE5L_AGF1RG1tDw5FA/edit?usp=sharing).
